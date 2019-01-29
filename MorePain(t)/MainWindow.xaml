@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:MorePain_t_"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="Black">
+        <InkCanvas x:Name="Canvas" HorizontalAlignment="Left" Height="399" Margin="185,10,0,0" VerticalAlignment="Top" Width="597" Background="White">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes FitToCurve="True" Height="2.0031496062992127" IgnorePressure="True" IsHighlighter="False" StylusTip="Ellipse" StylusTipTransform="Identity" Width="2.0031496062992127"/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
+        <Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="170" Height="62" Click="ClearButton_Click" Background="#FF953131" Foreground="White" FontSize="36" FontFamily="Britannic Bold" FontWeight="Bold"/>
+        <Button x:Name="button" Content="Black" HorizontalAlignment="Left" Margin="10,101,0,0" VerticalAlignment="Top" Width="71" Height="46" Click="Button_Click"/>
+        <Button x:Name="button1" Content="Blue" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top" Width="71" Height="46" Click="Button1_Click"/>
+        <Button x:Name="button2" Content="Red" HorizontalAlignment="Left" Margin="86,101,0,0" VerticalAlignment="Top" Width="71" Height="46" Click="Button2_Click"/>
+        <Button x:Name="button3" Content="Green" HorizontalAlignment="Left" Margin="86,152,0,0" VerticalAlignment="Top" Width="71" Height="46" RenderTransformOrigin="1.686,-0.293" Click="Button3_Click"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Height="17" Width="147" Background="#FF727272" ValueChanged="Slider_ValueChanged" Minimum="2" Maximum="100"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="16" Margin="10,218,0,0" TextWrapping="Wrap" Text="Change the Thickness" VerticalAlignment="Top" Width="147" Background="Black" Foreground="White"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="16" Margin="10,88,0,0" TextWrapping="Wrap" Text="Change the Color" VerticalAlignment="Top" Width="147" Background="Black" Foreground="White" RenderTransformOrigin="0.497,-4.437"/>
+
     </Grid>
 </Window>
